@@ -1,6 +1,9 @@
 import express from 'express';
 import TelegramBot from 'node-telegram-bot-api';
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const app = express()
 const PORT = 3000
 
@@ -11,9 +14,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => console.log(`My server is running on port ${PORT}`))
 
 // Укажите ваш токен бота
-const token = 'BOT_TOKEN';
-
-console.log(token);
+const token = 'TCC_BOT_TOKEN';
 
 // Укажите ID канала, куда нужно добавить комментарий
 const channelId = '@-1002131752207';
