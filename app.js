@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => console.log(`My server is running on port ${PORT}`))
 
 // Укажите ваш токен бота
-const token = '6824209048:AAGjezibRtrTdhbc7sO83RQVNf26bb2yTCA';
+const token = 'BOT_TOKEN';
 
 // Укажите ID канала, куда нужно добавить комментарий
-const channelId = 'JS therapy';
+const channelId = 'JSTherapy';
 
 // Создание бота
 const bot = new TelegramBot(token, { polling: true });
