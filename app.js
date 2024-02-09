@@ -13,8 +13,10 @@ app.listen(PORT, () => console.log(`My server is running on port ${PORT}`))
 // Укажите ваш токен бота
 const token = 'BOT_TOKEN';
 
+console.log(token);
+
 // Укажите ID канала, куда нужно добавить комментарий
-const channelId = '@-1002058965646';
+const channelId = '@-1002131752207';
 
 // Создание бота
 const bot = new TelegramBot(token, { polling: true });
