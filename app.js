@@ -1,9 +1,8 @@
-import express from 'express'
+import express from 'express';
+import TelegramBot from 'node-telegram-bot-api';
 
 const app = express()
 const PORT = 3000
-
-const TelegramBot = require('node-telegram-bot-api');
 
 app.get('/', (req, res) => {
     res.send('Hello s8')
@@ -15,7 +14,7 @@ app.listen(PORT, () => console.log(`My server is running on port ${PORT}`))
 const token = 'BOT_TOKEN';
 
 // Укажите ID канала, куда нужно добавить комментарий
-const channelId = 'JSTherapy';
+const channelId = '@-1002058965646';
 
 // Создание бота
 const bot = new TelegramBot(token, { polling: true });
